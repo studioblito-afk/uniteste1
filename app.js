@@ -8,7 +8,7 @@ let C=[
 {id:"pt",t:"Na ponta da língua",k:"pessoal",h:"3h",lv:"Todos os níveis",st:"n",pr:0},
 {id:"cnv",t:"Inteligência Emocional e Comunicação Não Violenta",k:"pessoal",h:"4h",lv:"Intermediário",st:"d",pr:100,dt:"03/11/2026"}];
 const TR=[["Trilha de boas-vindas","Do pré-onboarding ao primeiro mês",["ob","sis","inf"]],["Comunicação e relacionamento","Escreva melhor e converse com mais clareza",["pt","cnv"]]];
-const LW="assets/logo-unieco-branco.svg",IMG_BN="assets/banner-home.jpg",IMG_JR="assets/jornada-aprendizagem.jpg";
+const LW="logo-unieco-branco.svg",IMG_BN="banner-home.jpg",IMG_JR="jornada-aprendizagem.jpg";
 let q="",cat="",tab="all",cur="ob",role="c";
 const by=id=>C.find(c=>c.id===id),pl=(n,a,b)=>n+" "+(n===1?a:b);
 const stat=()=>({p:C.filter(c=>c.st==="p").length,pe:C.filter(c=>c.req&&c.st!=="d").length,d:C.filter(c=>c.st==="d").length});
